@@ -1,0 +1,17 @@
+{
+	"name": "Chat Ping",
+	"description": "Plays a sound when a person sends a message (Inspired by FishTaco's Message Sound mod)",
+	"author": "Pao",
+	"contact": "",
+	"version": "1.0",
+	"hooks": [
+		{
+			"hook_id": "lib/managers/chatmanager",
+			"script_path": "chatmanager.lua"
+		},
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "ChatPing.lua"
+		}
+	]
+}

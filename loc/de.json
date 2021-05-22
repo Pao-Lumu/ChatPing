@@ -1,0 +1,24 @@
+{
+    "chat_ping_menu_title": "Message Sound",
+    "chat_ping_menu_desc": "Optionen",
+
+    "chat_ping_enable_title": "Aktiviert",
+    "chat_ping_enable_desc": "",
+
+    "chat_ping_lang_title": "Sprache",
+    "chat_ping_lang_desc": "",
+
+    "chat_ping_lang_en": "Englisch",
+    "chat_ping_lang_de": "Deutsch",
+
+    "chat_ping_switcher_title": "Klänge",
+    "chat_ping_switcher_desc": "",
+    
+    "chat_ping_zoom_out_desc": "Vorausplanung auszoomen",
+    "chat_ping_zoom_in_desc": "Vorausplanung einzoomen",
+    "chat_ping_menu_error_desc": "Fehler",
+    "chat_ping_menu_exit_desc": "Zurück",
+    "chat_ping_menu_enter_desc": "Menu anlegen",
+    "chat_ping_finalize_mask_desc": "Maske abschließen",
+    "chat_ping_menu_skill_investment_desc": "Fertigkeiten-Punkt hinzufügen"
+}
