@@ -73,8 +73,8 @@ if not _G.ChatPing then
                     type = "MenuItemMultiChoice"
                 }
 
-                for k, v in pairs(multi_data.items or {}) do
-                    table.insert(data, {_meta = "option", text_id = v, value = k})
+                for _, v in ipairs(multi_data.items or {}) do
+                    table.insert(data, {_meta = "option", text_id = v[2], value = v[1]})
                 end
 
                 local params = {
@@ -117,8 +117,8 @@ if not _G.ChatPing then
                     callback = "ChatPing_lang",
                     value = ChatPing.settings.lang,
                     items = {
-                        ["en"] = "chat_ping_lang_en",
-                        ["de"] = "chat_ping_lang_de"
+                        {"en", "chat_ping_lang_en"},
+                        {"de", "chat_ping_lang_de"}
                     },
                     menu_id = chat_ping_menu_id
                 }
@@ -131,13 +131,13 @@ if not _G.ChatPing then
                     callback = "ChatPing_sound",
                     value = ChatPing.settings.sound,
                     items = {
-                        ["zoom_in"] = "chat_ping_zoom_in_desc",
-                        ["zoom_out"] = "chat_ping_zoom_out_desc",
-                        ["menu_error"] = "chat_ping_menu_error_desc",
-                        ["menu_exit"] = "chat_ping_menu_exit_desc",
-                        ["menu_enter"] = "chat_ping_menu_enter_desc",
-                        ["finalize_mask"] = "chat_ping_finalize_mask_desc",
-                        ["menu_skill_investment"] = "chat_ping_menu_skill_investment_desc"
+                        {"zoom_in", "chat_ping_zoom_in_desc"},
+                        {"zoom_out", "chat_ping_zoom_out_desc"},
+                        {"menu_error", "chat_ping_menu_error_desc"},
+                        {"menu_exit", "chat_ping_menu_exit_desc"},
+                        {"menu_enter", "chat_ping_menu_enter_desc"},
+                        {"finalize_mask", "chat_ping_finalize_mask_desc"},
+                        {"menu_skill_investment", "chat_ping_menu_skill_investment_desc"}
                     },
                     menu_id = chat_ping_menu_id
                 }
