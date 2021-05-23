@@ -3,11 +3,15 @@
 	"description": "Plays a sound when a person sends a message (Inspired by FishTaco's Message Sound mod)",
 	"author": "Pao",
 	"contact": "",
-	"version": "1.1",
-	"updates": [{
-		"identifier": "chatpingbeardlib",
-		"meta": "http://thegrammarjew.github.io/meta.json"
-	}],
+	"version": "1.0",
+	"updates": [
+		{
+			"identifier": "chatpingbeardlib",
+			"host": {
+				"meta": "https://thegrammarjew.github.io/meta.json"
+			}
+		}
+	],
 	"hooks": [
 		{
 			"hook_id": "lib/managers/chatmanager",
