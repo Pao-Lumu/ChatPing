@@ -4,6 +4,10 @@
 	"author": "Pao",
 	"contact": "",
 	"version": "1.0",
+	"updates": [{
+		"identifier": "chatpingbeardlib",
+		"meta": "http://thegrammarjew.github.io/meta.json"
+	}],
 	"hooks": [
 		{
 			"hook_id": "lib/managers/chatmanager",
