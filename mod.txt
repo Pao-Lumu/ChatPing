@@ -3,7 +3,7 @@
 	"description": "Plays a sound when a person sends a message (Inspired by FishTaco's Message Sound mod)",
 	"author": "Pao",
 	"contact": "",
-	"version": "1.0",
+	"version": "1.1",
 	"updates": [
 		{
 			"identifier": "chatpingbeardlib",
