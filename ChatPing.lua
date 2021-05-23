@@ -65,7 +65,23 @@ if not _G.ChatPing then
             MenuCallbackHandler.ChatPing_sound = function(self, item)
                 ChatPing.settings.sound = item:value()
                 ChatPing:Save()
-                managers.menu_component:post_event(ChatPing.settings.sound)
+
+                if string.sub(ChatPing.settings.sound, 1, 5) == "ping_" then
+                    local volume = managers.user:get_setting("sfx_volume")
+                    local percentage =
+                        (volume - tweak_data.menu.MIN_SFX_VOLUME) /
+                        (tweak_data.menu.MAX_SFX_VOLUME - tweak_data.menu.MIN_SFX_VOLUME)
+                    managers.menu_component._main_panel:video(
+                        {
+                            name = "chatping_" .. ChatPing.settings.sound,
+                            video = ChatPing.settings.sound,
+                            visible = false,
+                            loop = false
+                        }
+                    ):set_volume_gain(percentage)
+                else
+                    managers.menu_component:post_event(ChatPing.settings.sound)
+                end
             end
 
             local function BetterMultipleChoice(multi_data) -- Copy the entirety of MenuHelper:AddMultipleChoice() to here and swapping `ipairs` for `pairs` to allow for strings to be returned by multiple choice
@@ -137,7 +153,11 @@ if not _G.ChatPing then
                         {"menu_exit", "chat_ping_menu_exit_desc"},
                         {"menu_enter", "chat_ping_menu_enter_desc"},
                         {"finalize_mask", "chat_ping_finalize_mask_desc"},
-                        {"menu_skill_investment", "chat_ping_menu_skill_investment_desc"}
+                        {"menu_skill_investment", "chat_ping_menu_skill_investment_desc"},
+                        {"ping_custom1", "chat_ping_ping_custom1_desc"},
+                        {"ping_custom2", "chat_ping_ping_custom2_desc"},
+                        {"ping_custom3", "chat_ping_ping_custom3_desc"},
+                        {"ping_custom4", "chat_ping_ping_custom4_desc"}
                     },
                     menu_id = chat_ping_menu_id
                 }

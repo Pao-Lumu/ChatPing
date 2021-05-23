@@ -1,0 +1,8 @@
+<table name="ChatPing">
+	<AddFiles directory="Assets" force="false">
+		<bik path="ping_custom1"/>
+		<bik path="ping_custom2"/>
+		<bik path="ping_custom3"/>
+		<bik path="ping_custom4"/>
+	</AddFiles>
+</mod>

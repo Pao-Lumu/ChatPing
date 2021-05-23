@@ -1,5 +1,5 @@
 {
-    "chat_ping_menu_title": "Message Sound",
+    "chat_ping_menu_title": "Chat Ping",
     "chat_ping_menu_desc": "Optionen",
 
     "chat_ping_enable_title": "Aktiviert",
@@ -20,5 +20,10 @@
     "chat_ping_menu_exit_desc": "Zurück",
     "chat_ping_menu_enter_desc": "Menu anlegen",
     "chat_ping_finalize_mask_desc": "Maske abschließen",
-    "chat_ping_menu_skill_investment_desc": "Fertigkeiten-Punkt hinzufügen"
+    "chat_ping_menu_skill_investment_desc": "Fertigkeiten-Punkt hinzufügen",
+
+    "chat_ping_ping_custom1_desc": "Custom Ping 1",
+    "chat_ping_ping_custom2_desc": "Custom Ping 2",
+    "chat_ping_ping_custom3_desc": "Custom Ping 3",
+    "chat_ping_ping_custom4_desc": "Custom Ping 4"
 }

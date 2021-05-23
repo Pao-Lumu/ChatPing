@@ -20,5 +20,10 @@
     "chat_ping_menu_exit_desc": "Close Menu",
     "chat_ping_menu_enter_desc": "Open Menu",
     "chat_ping_finalize_mask_desc": "Finalize Mask",
-    "chat_ping_menu_skill_investment_desc": "Skill Point Investment"
+    "chat_ping_menu_skill_investment_desc": "Skill Point Investment",
+
+    "chat_ping_ping_custom1_desc": "Custom Ping 1",
+    "chat_ping_ping_custom2_desc": "Custom Ping 2",
+    "chat_ping_ping_custom3_desc": "Custom Ping 3",
+    "chat_ping_ping_custom4_desc": "Custom Ping 4"
 }
