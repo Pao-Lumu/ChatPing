@@ -8,7 +8,7 @@
 		{
 			"identifier": "chatpingbasic",
 			"host": {
-				"meta": "https://thegrammarjew.github.io/meta.json"
+				"meta": "https://pao-lumu.github.io/meta.json"
 			}
 		}
 	],
